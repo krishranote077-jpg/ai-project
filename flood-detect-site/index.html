@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FloodSense AI — Flood Detection in Northeast India</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&family=Space+Grotesk:wght@400;600;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="navbar">
+    <div class="nav-inner">
+      <div class="logo">
+        <span class="logo-icon">🌊</span>
+        <span class="logo-text">FloodSense<span class="accent">AI</span></span>
+      </div>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#how">How It Works</a></li>
+        <li><a href="#features">Features</a></li>
+        <li><a href="#impact">Impact</a></li>
+        <li><a href="#team">Team</a></li>
+        <li><a href="#contact" class="btn-nav">Contact Us</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger">&#9776;</button>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero" id="home">
+    <div class="hero-bg">
+      <div class="wave wave1"></div>
+      <div class="wave wave2"></div>
+      <div class="wave wave3"></div>
+    </div>
+    <div class="hero-content">
+      <div class="hero-badge">🛰️ AI-Powered Early Warning System</div>
+      <h1 class="hero-title">
+        Predicting Floods in<br />
+        <span class="gradient-text">Northeast India</span><br />
+        Before They Strike
+      </h1>
+      <p class="hero-subtitle">
+        Leveraging satellite imagery, IoT sensors, and deep learning to protect millions of lives 
+        across Assam, Meghalaya, Manipur, and beyond.
+      </p>
+      <div class="hero-cta">
+        <a href="#how" class="btn-primary">See How It Works</a>
+        <a href="#impact" class="btn-secondary">View Impact</a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat-card">
+          <span class="stat-num">94%</span>
+          <span class="stat-label">Detection Accuracy</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-num">72hrs</span>
+          <span class="stat-label">Advance Warning</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-num">8</span>
+          <span class="stat-label">States Covered</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-num">2M+</span>
+          <span class="stat-label">People Protected</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="section" id="about">
+    <div class="container">
+      <div class="section-label">About the Project</div>
+      <h2 class="section-title">Why Northeast India?</h2>
+      <div class="about-grid">
+        <div class="about-text">
+          <p>
+            Northeast India is one of the <strong>most flood-prone regions in the world</strong>. 
+            Every year, the mighty Brahmaputra and its tributaries inundate vast areas of Assam, 
+            displacing millions of people, destroying crops, and causing irreversible damage to 
+            infrastructure and ecosystems.
+          </p>
+          <p>
+            Traditional flood monitoring methods are too slow and too coarse to provide 
+            actionable early warnings. <strong>FloodSense AI</strong> changes this by combining 
+            real-time satellite data, ground sensor networks, and state-of-the-art machine 
+            learning models trained specifically on the unique hydrology of Northeast India.
+          </p>
+          <div class="about-highlights">
+            <div class="highlight-item">
+              <span class="highlight-icon">📡</span>
+              <div>
+                <strong>Real-time Satellite Data</strong>
+                <p>Sentinel-1 SAR & MODIS imagery processed every 6 hours</p>
+              </div>
+            </div>
+            <div class="highlight-item">
+              <span class="highlight-icon">🌧️</span>
+              <div>
+                <strong>Rainfall Forecasting</strong>
+                <p>LSTM-based precipitation models trained on 30-year historical data</p>
+              </div>
+            </div>
+            <div class="highlight-item">
+              <span class="highlight-icon">📲</span>
+              <div>
+                <strong>SMS Alerts</strong>
+                <p>Instant warnings to local authorities and residents in Assamese, Bengali & English</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="about-map">
+          <div class="map-placeholder">
+            <div class="map-inner">
+              <div class="pulse-dot" style="top:30%; left:40%"></div>
+              <div class="pulse-dot" style="top:55%; left:60%"></div>
+              <div class="pulse-dot" style="top:45%; left:30%"></div>
+              <div class="pulse-dot" style="top:65%; left:45%"></div>
+              <span class="map-label">🗺️ Northeast India</span>
+              <span class="map-sublabel">Live monitoring zones</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- HOW IT WORKS -->
+  <section class="section section-dark" id="how">
+    <div class="container">
+      <div class="section-label light">How It Works</div>
+      <h2 class="section-title light">The FloodSense Pipeline</h2>
+      <div class="pipeline">
+        <div class="pipeline-step">
+          <div class="step-icon">🛰️</div>
+          <div class="step-number">01</div>
+          <h3>Data Collection</h3>
+          <p>Satellite imagery (Sentinel-1 SAR, MODIS), IoT river gauge sensors, weather station data, and rainfall forecasts are aggregated in real time.</p>
+        </div>
+        <div class="pipeline-arrow">→</div>
+        <div class="pipeline-step">
+          <div class="step-icon">⚙️</div>
+          <div class="step-number">02</div>
+          <h3>AI Processing</h3>
+          <p>Our multi-modal deep learning model (CNN + LSTM hybrid) analyzes terrain, water levels, soil saturation, and rainfall intensity simultaneously.</p>
+        </div>
+        <div class="pipeline-arrow">→</div>
+        <div class="pipeline-step">
+          <div class="step-icon">🔮</div>
+          <div class="step-number">03</div>
+          <h3>Flood Prediction</h3>
+          <p>The model outputs flood probability maps, predicted inundation extent, and risk scores for every district — up to 72 hours in advance.</p>
+        </div>
+        <div class="pipeline-arrow">→</div>
+        <div class="pipeline-step">
+          <div class="step-icon">🚨</div>
+          <div class="step-number">04</div>
+          <h3>Alert Dispatch</h3>
+          <p>Automated alerts are sent via SMS, app notifications, and government dashboards to trigger timely evacuation and resource deployment.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FEATURES -->
+  <section class="section" id="features">
+    <div class="container">
+      <div class="section-label">Features</div>
+      <h2 class="section-title">What Makes FloodSense Unique</h2>
+      <div class="features-grid">
+        <div class="feature-card">
+          <div class="feature-icon">🧠</div>
+          <h3>Multi-Modal AI</h3>
+          <p>Combines CNNs for spatial pattern recognition with LSTMs for temporal sequence modeling — purpose-built for hydrological prediction.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">🗺️</div>
+          <h3>High-Resolution Flood Maps</h3>
+          <p>30-meter resolution inundation maps updated every 6 hours, allowing village-level risk assessment and targeted evacuations.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">⚡</div>
+          <h3>72-Hour Early Warning</h3>
+          <p>Industry-leading 3-day advance warning gives communities ample time to evacuate, move livestock, and secure assets.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">🌐</div>
+          <h3>Offline-First Dashboard</h3>
+          <p>Works even with poor internet connectivity — critical for remote areas of Arunachal Pradesh, Nagaland, and Manipur.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">🔗</div>
+          <h3>Government Integration</h3>
+          <p>Direct API integration with NDRF, Assam SDMA, and State Disaster Management portals for coordinated emergency response.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">📊</div>
+          <h3>Historical Analytics</h3>
+          <p>30+ years of flood data visualized for trend analysis, climate change impact assessment, and infrastructure planning.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- IMPACT -->
+  <section class="section section-accent" id="impact">
+    <div class="container">
+      <div class="section-label light">Our Impact</div>
+      <h2 class="section-title light">Protecting Northeast India's Future</h2>
+      <div class="impact-grid">
+        <div class="impact-stat">
+          <div class="impact-num">₹420 Cr+</div>
+          <div class="impact-label">Estimated crop losses prevented</div>
+        </div>
+        <div class="impact-stat">
+          <div class="impact-num">15,000+</div>
+          <div class="impact-label">Timely evacuations enabled</div>
+        </div>
+        <div class="impact-stat">
+          <div class="impact-num">94%</div>
+          <div class="impact-label">Model prediction accuracy</div>
+        </div>
+        <div class="impact-stat">
+          <div class="impact-num">8 States</div>
+          <div class="impact-label">Across the Northeast region</div>
+        </div>
+      </div>
+      <div class="testimonial">
+        <blockquote>
+          "FloodSense AI gave us a 48-hour advance warning before the 2024 Brahmaputra floods. 
+          We evacuated over 3,000 families safely. This technology is a lifesaver."
+        </blockquote>
+        <cite>— District Collector, Majuli Island, Assam</cite>
+      </div>
+    </div>
+  </section>
+
+  <!-- TEAM -->
+  <section class="section" id="team">
+    <div class="container">
+      <div class="section-label">Team</div>
+      <h2 class="section-title">The Minds Behind FloodSense</h2>
+      <div class="team-grid">
+        <div class="team-card">
+          <div class="team-avatar">👩‍💻</div>
+          <h3>Dr. Priya Hazarika</h3>
+          <span class="team-role">Lead AI Researcher</span>
+          <p>PhD in Remote Sensing & ML from IIT Guwahati. 10+ years in flood modeling.</p>
+        </div>
+        <div class="team-card">
+          <div class="team-avatar">👨‍🔬</div>
+          <h3>Arjun Bora</h3>
+          <span class="team-role">Hydrology Expert</span>
+          <p>Former ISRO scientist specializing in Brahmaputra basin hydrology and SAR analysis.</p>
+        </div>
+        <div class="team-card">
+          <div class="team-avatar">👩‍🏫</div>
+          <h3>Meghna Sharma</h3>
+          <span class="team-role">Data Engineer</span>
+          <p>Builds the real-time data pipelines that power our 6-hourly model updates.</p>
+        </div>
+        <div class="team-card">
+          <div class="team-avatar">👨‍💼</div>
+          <h3>Ranjit Gogoi</h3>
+          <span class="team-role">Community Liaison</span>
+          <p>Works directly with village councils and NDRF to translate AI outputs into action.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="section section-dark" id="contact">
+    <div class="container">
+      <div class="section-label light">Get In Touch</div>
+      <h2 class="section-title light">Partner With Us</h2>
+      <p class="contact-desc">
+        Are you a government agency, NGO, or research institution working on disaster resilience? 
+        We'd love to collaborate.
+      </p>
+      <form class="contact-form" onsubmit="handleSubmit(event)">
+        <div class="form-row">
+          <input type="text" placeholder="Your Name" required />
+          <input type="email" placeholder="Email Address" required />
+        </div>
+        <input type="text" placeholder="Organization" />
+        <textarea placeholder="Tell us about your interest or use case..." rows="4" required></textarea>
+        <button type="submit" class="btn-primary">Send Message 🚀</button>
+      </form>
+      <div class="contact-info">
+        <span>📍 Guwahati, Assam, India</span>
+        <span>📧 hello@floodsense.ai</span>
+        <span>📞 +91 98765 43210</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="logo">
+        <span class="logo-icon">🌊</span>
+        <span class="logo-text">FloodSense<span class="accent">AI</span></span>
+      </div>
+      <p>Built with ❤️ to protect the people of Northeast India.</p>
+      <p class="footer-copy">© 2026 FloodSense AI. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <div class="toast" id="toast">✅ Message sent! We'll be in touch soon.</div>
+
+  <script src="script.js"></script>
+</body>
+</html>
